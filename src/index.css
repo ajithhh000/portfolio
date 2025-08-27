@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DevOps Portfolio Design System - Blue to Purple Tech Theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Background & Surface Colors */
+    --background: 220 30% 5%;
+    --foreground: 210 40% 98%;
+    --surface: 220 25% 8%;
+    --surface-elevated: 220 20% 12%;
+
+    /* Card & Popover */
+    --card: 220 25% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary Brand Colors - Blue Gradient */
+    --primary: 217 91% 60%;
+    --primary-dark: 230 84% 50%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary Colors - Purple Accent */
+    --secondary: 267 84% 65%;
+    --secondary-dark: 267 84% 55%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-glow: 267 84% 75%;
+
+    /* Muted & Accent */
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 220 20% 18%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 30% 5%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Border & Input */
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 217 91% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(267, 84%, 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(230, 84%, 50%), hsl(267, 84%, 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(220, 30%, 5%) 0%, hsl(217, 91%, 15%) 50%, hsl(267, 84%, 20%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220, 25%, 8%) 0%, hsl(220, 20%, 12%) 100%);
+    
+    /* Shadows & Glows */
+    --shadow-glow-primary: 0 0 40px hsl(217, 91%, 60%, 0.3);
+    --shadow-glow-secondary: 0 0 40px hsl(267, 84%, 65%, 0.3);
+    --shadow-card: 0 8px 32px hsl(220, 30%, 5%, 0.5);
+    --shadow-elevated: 0 16px 64px hsl(220, 30%, 5%, 0.7);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light mode override (if needed later) */
+  .light {
+    --background: 210 40% 98%;
+    --foreground: 220 30% 5%;
+    --surface: 210 40% 95%;
+    --card: 0 0% 100%;
+    --border: 220 20% 85%;
+    --gradient-hero: linear-gradient(135deg, hsl(210, 40%, 98%) 0%, hsl(217, 91%, 95%) 50%, hsl(267, 84%, 95%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Glass morphism effect */
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-xl border border-border/50 shadow-lg;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow-primary);
+  }
+  
+  .glow-secondary {
+    box-shadow: var(--shadow-glow-secondary);
+  }
+  
+  /* Animated gradient background */
+  .animated-gradient {
+    background: var(--gradient-hero);
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  /* Hero section styling */
+  .hero-section {
+    background: var(--gradient-hero);
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, hsl(217, 91%, 60%, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+}
