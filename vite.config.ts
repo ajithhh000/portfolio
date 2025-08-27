@@ -11,13 +11,17 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === 'development' &&
+    componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 Add this line (must match your GitHub repo name)
-  base: "/portfolio-website/",
+  base: mode === 'production' ? '/portfolio-website/' : '/',
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+  },
 }));
