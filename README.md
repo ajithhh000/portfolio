@@ -29,7 +29,7 @@ This project is built with:
 
 ```sh
 # Step 1: Clone the repository
-git clone https://github.com/ajithhh000/portfolio-website.git
+git clone https://github.com/ajithhh000/portfolio.git
 
 # Step 2: Navigate to the project folder
 cd portfolio-website
