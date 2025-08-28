@@ -104,7 +104,7 @@ const HeroSection = () => {
               <div className="absolute top-1/2 -left-8 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "2s" }}>
                 <span className="text-xs font-medium text-primary">Ansible</span>
               </div>
-              <div className="absolute top-2 -left-7 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "3s" }}>
+              <div className="absolute bottom-4 -right-7 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "3s" }}>
                 <span className="text-xs font-medium text-primary">Terraform</span>
               </div>
               <div className="absolute top-4 -left-8 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "4s" }}>
