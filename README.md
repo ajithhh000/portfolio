@@ -11,7 +11,7 @@ This site showcases my skills, projects, and interests in **DevOps, Cloud, and A
 ---
 
 ## 🛠️ Tech Stack
-This project is built ith:
+This project is built with:
 - **React** + **TypeScript**  
 - **Vite** (fast build tool)  
 - **Tailwind CSS** for styling  

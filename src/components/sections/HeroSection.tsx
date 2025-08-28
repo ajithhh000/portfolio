@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-6 leading-none tracking-tight">
-              <span className="block text-foreground font-extrabold bg-gradient-to-r from-foreground via-foreground to-foreground/80 bg-clip-text drop-shadow-lg">
+              <span className="block text-foreground font-extrabold bg-gradient-to-r from-foreground via-foreground to-foreground/80 bg-clip-text text-transparent drop-shadow-lg">
                 Ajith P
               </span>
               <span className="gradient-text font-bold text-3xl md:text-5xl lg:text-6xl block mt-2 tracking-wide">
