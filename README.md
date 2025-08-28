@@ -6,7 +6,7 @@ This site showcases my skills, projects, and interests in **DevOps, Cloud, and A
 ---
 
 ## 🚀 Live Demo
-🔗 [Portfolio Website](https://ajithhh000.github.io/portfolio-website/)
+🔗 [Portfolio Website](https://ajithhh000.github.io/portfolio/)
 
 ---
 
