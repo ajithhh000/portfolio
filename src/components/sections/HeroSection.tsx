@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="inline-block px-6 py-3 glass-card mb-8 animate-scale-in rounded-full border border-primary/20">
               <span className="text-sm font-semibold text-primary flex items-center gap-2">
                 <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
-                Available for DevOps Opportunities
+                Available for DevOps and Cloud Opportunities
               </span>
             </div>
             
@@ -29,14 +29,14 @@ const HeroSection = () => {
                 Ajith P
               </span>
               <span className="gradient-text font-bold text-3xl md:text-5xl lg:text-6xl block mt-2 tracking-wide">
-                DevOps Engineer
+                DevOps/Cloud
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Aspiring DevOps Engineer & Cloud Enthusiast. Recent B.Tech graduate passionate about 
-              <span className="text-primary font-medium"> automation, infrastructure as code</span>, and 
-              building scalable cloud solutions.
+              <span className="text-primary font-medium"> automation</span> and 
+             deploying scalable cloud solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
@@ -67,11 +67,11 @@ const HeroSection = () => {
                 <div className="text-sm text-muted-foreground">Graduate</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-secondary">5+</div>
+                <div className="text-2xl font-bold text-secondary">6+</div>
                 <div className="text-sm text-muted-foreground">Technologies</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-primary">2</div>
+                <div className="text-2xl font-bold text-primary">2+</div>
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
             </div>
@@ -102,7 +102,13 @@ const HeroSection = () => {
               </div>
               
               <div className="absolute top-1/2 -left-8 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "2s" }}>
-                <span className="text-xs font-medium text-primary">DevOps</span>
+                <span className="text-xs font-medium text-primary">Ansible</span>
+              </div>
+              <div className="absolute top-1/2 -left-8 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "2s" }}>
+                <span className="text-xs font-medium text-primary">Terraform</span>
+              </div>
+              <div className="absolute top-1/2 -left-8 glass-card px-3 py-2 rounded-full animate-bounce-gentle" style={{ animationDelay: "2s" }}>
+                <span className="text-xs font-medium text-primary">Jenkins</span>
               </div>
             </div>
           </div>
