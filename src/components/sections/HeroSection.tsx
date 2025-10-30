@@ -85,6 +85,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+              </div>
 
           {/* Right Content - Profile Image */}
           <div className="flex-1 max-w-md lg:max-w-lg animate-fade-up">
