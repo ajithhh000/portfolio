@@ -67,7 +67,7 @@ const HeroSection = () => {
   <Download className="mr-2 h-5 w-5" />
   Download CV
 </Button>
-
+</div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0">
@@ -85,7 +85,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-              </div>
+              
 
           {/* Right Content - Profile Image */}
           <div className="flex-1 max-w-md lg:max-w-lg animate-fade-up">
