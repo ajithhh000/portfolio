@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, ChevronDown } from "lucide-react";
 import profileImage from "@/assets/ajith-profile.jpg";
-import cV from "@/assets/Ajith-resume (1)";
+import cV from "@/assets/Ajith-res";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
