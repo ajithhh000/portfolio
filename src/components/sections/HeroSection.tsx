@@ -54,13 +54,14 @@ const HeroSection = () => {
   variant="outline" 
   size="lg"
   onClick={() => {
-    const link = document.createElement('a');
-    link.href = cV; 
-    link.download = 'My_CV.pdf';   
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
+  const link = document.createElement('a');
+  link.href = cV; 
+  link.download = 'My_CV.pdf';   
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}}
+
   className="border-border hover:bg-surface-elevated font-semibold px-8 py-4 rounded-xl backdrop-blur-sm"
 >
   <Download className="mr-2 h-5 w-5" />
