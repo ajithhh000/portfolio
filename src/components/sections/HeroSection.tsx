@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download, ChevronDown } from "lucide-react";
 import profileImage from "@/assets/ajith-profile.jpg";
+import cV from "@/assets/Ajith-resume (1)";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -54,7 +55,7 @@ const HeroSection = () => {
   size="lg"
   onClick={() => {
     const link = document.createElement('a');
-    link.href = '/path/to/cv.pdf'; 
+    link.href = {cV}; 
     link.download = 'My_CV.pdf';   
     document.body.appendChild(link);
     link.click();
