@@ -55,7 +55,7 @@ const HeroSection = () => {
   size="lg"
   onClick={() => {
     const link = document.createElement('a');
-    link.href = {cV}; 
+    link.href = cV; 
     link.download = 'My_CV.pdf';   
     document.body.appendChild(link);
     link.click();
