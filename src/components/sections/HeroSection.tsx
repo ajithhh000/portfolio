@@ -75,14 +75,7 @@ const HeroSection = () => {
                 <div className="text-2xl font-bold text-primary">2025</div>
                 <div className="text-sm text-muted-foreground">Graduate</div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-secondary">6+</div>
-                <div className="text-sm text-muted-foreground">Technologies</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-primary">2+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
-              </div>
+              
             </div>
           </div>
               
