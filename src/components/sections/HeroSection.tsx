@@ -50,15 +50,22 @@ const HeroSection = () => {
               </Button>
               
               <Button 
-                variant="outline" 
-                size="lg"
-                onClick={() => scrollToSection("contact")}
-                className="border-border hover:bg-surface-elevated font-semibold px-8 py-4 rounded-xl backdrop-blur-sm"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
-              </Button>
-            </div>
+  variant="outline" 
+  size="lg"
+  onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/path/to/cv.pdf'; 
+    link.download = 'My_CV.pdf';   
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+  className="border-border hover:bg-surface-elevated font-semibold px-8 py-4 rounded-xl backdrop-blur-sm"
+>
+  <Download className="mr-2 h-5 w-5" />
+  Download CV
+</Button>
+
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0">
